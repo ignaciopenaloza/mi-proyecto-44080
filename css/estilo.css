@@ -1,0 +1,275 @@
+
+
+
+*{
+    margin: 0px;
+    padding: 0px;
+}
+
+body
+{
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    background-image: linear-gradient( to top right,#0F2027, #203A43,#2C5364);
+    
+}
+.container
+{
+
+    display: grid;
+    justify-content: center;
+    grid-template-areas: "box1"
+    "box2"
+    "box3"
+    "box4"
+    "box5";
+}
+
+.box-1
+{
+    grid-area: box1;
+    background-color: #0F2027;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    color: gold;
+}
+.box-2
+{
+    grid-area: box2;
+    background-color: black;
+    justify-content: center;
+    font-size: small;
+}
+nav ul li
+{
+    list-style-type: none;
+    border: 2px;
+}
+a
+{
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    color: goldenrod;
+    text-decoration: none;
+}
+.box-3
+{
+    grid-area: box3;
+    font-size: medium;
+    margin-top: 30px;
+    
+}
+p
+{
+    margin-bottom: 30px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.cita
+{
+    color: wheat;
+}
+
+.contactanos
+{
+    color: goldenrod;
+}
+
+
+
+h1
+{
+    margin-bottom: 20px;
+}
+
+h2
+{
+    color: goldenrod;
+    margin-bottom: 20px;
+    font-style: oblique;
+}
+
+figcaption
+{
+    color: goldenrod;
+}
+img
+{
+    width: 280px;
+    height: 200px;
+}
+
+.box-4
+{
+    grid-area: box4;
+    margin-top: 50px;
+    margin-bottom: 20px;
+    gap: 15px;
+    
+}
+.box-5
+{
+    grid-area: box5;
+    background-color: black;
+    padding: 2em;
+    margin-bottom: 0;
+    margin-top: 1,5em;
+    
+}
+
+.tamaño
+{
+     width: 30px;
+     height: 30px;
+}
+.tamañoFace{
+    width: 30px;
+    height: 30px;
+}
+
+    
+.containerServicios
+{
+    display: grid;
+    justify-content: center;
+    grid-template-areas: "box-1s"
+    "box-2s"
+    "box-3s"
+    "box-4s"
+    "box-5s";
+}
+.box-1s
+{
+    grid-area: box-1s;background-color: #0F2027;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    color: gold;
+    
+}
+
+
+.box-2s
+{
+    grid-area: box-2s;
+    background-color: black;
+    justify-content: center;
+    font-size: small;
+    
+}
+.box-3s
+{
+    grid-area: box-3s ;
+    margin-top: 30px;
+
+}
+.box-4s
+{
+    grid-area: box-4s;
+}
+.box-5s
+{
+    grid-area: box-5s;
+    background-color: black;
+    margin-top: 30px;
+    padding: 2em;
+}
+
+    
+    @media(min-width:500px)
+    {
+        .container
+        {
+            margin: 0;
+            grid-template-columns: 1fr 1fr;
+            grid-template-areas: 
+            "box1 box1"
+            "box2 box2"
+            "box3 box3"
+            "box4 box4"
+            "box5 box5";
+        }
+        nav ul
+        {
+            display: flex;
+            justify-content: center;
+            color: goldenrod;
+            border: 3px solid goldenrod;
+            gap: 80px;
+        }
+        img
+        {
+            width: 350px;
+            height: 300px;
+        }
+        .box-2
+        {
+            background-color: black;
+        }
+        .box-5
+        {
+            margin-top: 0%;
+        }
+        
+    }
+
+    @media(min-width: 768px)
+    {
+        .container{
+            margin-bottom: 1,5em;
+            grid-template-columns: 1fr 4fr 1fr;
+            grid-template-areas: "box1 box1 box1"
+            "box2 box2 box2"
+            "box3 box3 box3"
+            "box4 box4 box4"
+            "box5 box5 box5" ;
+        }
+        nav ul
+        {
+            flex-direction: row;
+            border: 2px solid black;
+        }
+        .box-4
+        {
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr;
+        }
+        img{
+            width: 300px;
+            height: 200px;
+        }
+        .box-5{
+            margin-top: 135px;
+        }
+        
+        
+        }
+    @media(min-width:1024px)
+    {
+        .tamaño
+        {
+            height: 40px;
+            width: 40px;
+
+        }
+        .tamañoFace
+        {
+            height: 40px;
+            width: 40px;
+            gap: 5px;
+        }
+    .imagenBlog{
+        width: 400px;
+        height: 300px;
+    }
+    .parrafoBlog{
+        width: 400px;
+        height: 300px;
+        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        margin-top: 40px;
+        margin-bottom: 30px;
+        color: antiquewhite;
+        
+
+        
+    }
+            
+    }
